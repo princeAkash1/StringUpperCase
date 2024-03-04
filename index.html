@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpperCase</title>
+  </head>
+  <body>
+    <script>
+      function stringUppercase() {
+        debugger;
+        var inputContent = "cha_itan_ya_ku_mar";
+        var result = inputContent.split("_");
+        console.log(result);
+        var output = result
+          .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+          .join("");
+        console.log(output);
+        var userOutput = output[0].toLowerCase() + output.slice(1);
+        document.write(userOutput);
+      }
+
+      stringUppercase();
+    </script>
+  </body>
+</html>
